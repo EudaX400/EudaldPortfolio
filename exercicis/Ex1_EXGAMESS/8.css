@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://i.pinimg.com/550x/a5/93/49/a59349ebe9a988ee63d60ccbedc362cf.jpg);
+    
+    background-color: rgb(230, 180, 73);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-image: url(https://e0.pxfuel.com/wallpapers/516/695/desktop-wallpaper-a-fever-you-can-t-sweat-out-panic-at-the-disco-computer.jpg);
+    background-size: 1100px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.titul {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 300px;
+}
+
+.Group {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    background-color:  #6c111a ;
+    border: 2px solid rgb(0, 0, 0);
+    color:	#D4AF37;
+    text-align: center;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.Link {
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    background-color: #6c111a ;
+    border: 2px solid rgb(0, 0, 0);
+    color: #D4AF37;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Audio {
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    background-color: #6c111a;
+    border: 2px solid rgb(0, 0, 0);
+    color: #D4AF37;
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.GroupSection {
+    justify-content: space-between;
+    display: flex;
+}
+
+.other {
+    display: flex;
+}
+
+.Altres {
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    width: 50%;
+    background-color: #6c111a ;
+    border: 2px solid rgb(0, 0, 0);
+    color: #D4AF37;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+th {
+    background-color: rgb(240, 123, 63);
+    color: rgb(219, 13, 54);
+}
+
+td {
+    background-color: rgb(255, 212, 96);
+    color: rgb(45, 64, 89)
+}
+
+.Taula {
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 15px 15px;
+    width: 50%;
+    background-color: #6c111a ;
+    border: 2px solid rgb(0, 0, 0);
+    color: #D4AF37;
+    border-radius: 20px;
+    width: auto;
+}
+
+audio {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid rgb(45, 64, 89);
+    padding: 10px;
+    text-align: center;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video {
+    width: 28%;
+    margin: 10px;
+}
+
+.iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    align-content: center;
+    display: flex;
+}
+footer {
+    background-color:#6c111a;
+    padding: 5px 5px;
+    margin: 0;
+    overflow: auto;
+    text-align: center;
+    color: #D4AF37;
+}
+
+footer div{
+    width: 7%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
