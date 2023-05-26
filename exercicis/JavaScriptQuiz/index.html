@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Exercicis d'HTML, CSS i JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Javascript Quiz</h1>
+  </header>
+
+  <div id="quiz-container">
+    <div id="start-container">
+      <p>Benvingut a JavaScript Quiz. Fes clic a Continuar per començar el test.</p>
+      <button id="start-btn">Continuar</button>
+    </div>
+
+    <div id="question-container" class="hide">
+      <div id="timer-container">
+        <p id="timer">120</p>
+      </div>
+      <div id="question">
+        <p id="question-text">Que mostrara?</p>
+      </div>
+      <div id="answers">
+        <input type="radio" id="answer1" name="answer" value="answer1">
+        <label for="answer1">NaN</label><br>
+        <input type="radio" id="answer2" name="answer" value="answer2">
+        <label for="answer2">15</label><br>
+        <input type="radio" id="answer3" name="answer" value="answer3">
+        <label for="answer3">105</label><br>
+      </div>
+      <button id="next-btn">Següent</button>
+    </div>
+
+    <div id="result-container" class="hide">
+      <h2>Estadístiques</h2>
+      <p id="score"></p>
+      <button id="restart-btn">Reintentar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
