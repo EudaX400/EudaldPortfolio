@@ -3,31 +3,31 @@ const questions = [
     image: "1.png",
     question: "Què mostrarà?",
     answers: ["NaN", "15", "105"],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     image: "2.png",
     question: "Aquest codi funciona?",
     answers: ["Sí i mostra 10", "Sí i mostra 25", "No"],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {    
     image: "3.png",
     question: "Aquest codi funciona?",
-    answers: ["No", "sí i mostra  7", "sí i mostra 57"],
-    correctAnswer: 1
+    answers: ["No", "sí i mostra  7", "sí i mostra 52"],
+    correctAnswer: 2
   },
   {
     image: "4.png",
     question: "Quin valor mostrarà alert?",
     answers: ["1", "5", "0"],
-    correctAnswer: 1
+    correctAnswer: 2
   },
   {
     image: "5.png",
     question: " Aquest codi funciona?",
     answers: ["No", "sí i mostra  0", "sí i mostra 12"],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     image: "6.png",
@@ -39,7 +39,7 @@ const questions = [
     image: "7.png",
     question: "Quin valor mostrarà alert?",
     answers: ["8", "6", "5"],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     image: "8.png",
