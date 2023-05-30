@@ -63,13 +63,12 @@ const questions = [
 
 ];
 
-// Variables globals
 let currentQuestion = 0;
 let score = 0;
 let timer;
 const totalTime = 120;
 
-const startContainer = document.getElementById("start-container");
+const startContainer = document.getElementById("start");
 const questionContainer = document.getElementById("question-container");
 const resultContainer = document.getElementById("result-container");
 const timerElement = document.getElementById("timer");
@@ -78,7 +77,6 @@ const answerElements = document.querySelectorAll("#answers input[type='radio']")
 const nextButton = document.getElementById("next-btn");
 const scoreElement = document.getElementById("score");
 
-// Inicialització
 function init() {
   startContainer.classList.remove("hide");
   questionContainer.classList.add("hide");
@@ -86,7 +84,6 @@ function init() {
   score = 0;
 }
 
-// Començar el test
 function startQuiz() {
   startContainer.classList.add("hide");
   questionContainer.classList.remove("hide");
@@ -94,7 +91,6 @@ function startQuiz() {
   startTimer();
 }
 
-// Passar a la següent pregunta
 function setNextQuestion() {
   resetAnswers();
   if (currentQuestion < questions.length) {
@@ -109,14 +105,12 @@ function setNextQuestion() {
   }
 }
 
-// Reiniciar les respostes
 function resetAnswers() {
   for (let i = 0; i < answerElements.length; i++) {
     answerElements[i].checked = false;
   }
 }
 
-// Comprovar la resposta
 function checkAnswer() {
   const selectedAnswer = document.querySelector("#answers input[name='answer']:checked");
   if (selectedAnswer) {
@@ -129,15 +123,22 @@ function checkAnswer() {
   }
 }
 
-// Finalitzar el test
 function endQuiz() {
   clearInterval(timer);
   questionContainer.classList.add("hide");
   resultContainer.classList.remove("hide");
-  scoreElement.textContent = `Preguntes respostes: ${currentQuestion}/${questions.length}\nCorrectes: ${score}\nPuntuació: ${score * 10}`;
+  scoreElement.innerHTML = `Preguntes respostes: ${currentQuestion}/${questions.length}<br><br>Correctes: ${score}<br><br>Puntuació: ${score * 10}`;
 }
 
-// Iniciar el temporitzador
+function restartQuiz() {
+  currentQuestion = 0;
+  score = 0;
+  resultContainer.classList.add("hide");
+  questionContainer.classList.remove("hide");
+  setNextQuestion();
+  startTimer();
+}
+
 function startTimer() {
   let timeLeft = totalTime;
   timerElement.textContent = timeLeft;
@@ -150,10 +151,8 @@ function startTimer() {
   }, 1000);
 }
 
-// Event listeners
 document.getElementById("start-btn").addEventListener("click", startQuiz);
 nextButton.addEventListener("click", checkAnswer);
-document.getElementById("restart-btn").addEventListener("click", init);
+document.getElementById("restart-btn").addEventListener("click", restartQuiz);
 
-// Inicialitzar el test
 init();
