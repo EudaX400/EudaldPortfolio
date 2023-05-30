@@ -68,7 +68,7 @@ let score = 0;
 let timer;
 const totalTime = 120;
 
-const startContainer = document.getElementById("start");
+const start = document.getElementById("start");
 const questionContainer = document.getElementById("question-container");
 const resultContainer = document.getElementById("result-container");
 const timerElement = document.getElementById("timer");
@@ -78,14 +78,14 @@ const nextButton = document.getElementById("next-btn");
 const scoreElement = document.getElementById("score");
 
 function init() {
-  startContainer.classList.remove("hide");
+  start.classList.remove("hide");
   questionContainer.classList.add("hide");
   resultContainer.classList.add("hide");
   score = 0;
 }
 
 function startQuiz() {
-  startContainer.classList.add("hide");
+  start.classList.add("hide");
   questionContainer.classList.remove("hide");
   setNextQuestion();
   startTimer();
